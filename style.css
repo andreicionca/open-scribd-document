@@ -1,0 +1,68 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    to right,
+    #6a11cb 0%,
+    #2575fc 100%
+  ); /* Gradient background */
+  color: #fff; /* White text color for better readability */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.instruction {
+  margin-bottom: 20px;
+  color: #ffffff; /* White text color for the instruction */
+  font-size: 30px; /* Increased font size for instructions */
+  text-align: center; /* Ensure the instruction is centered */
+}
+
+input#scribdLink {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff; /* White border for input */
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+  color: #fff; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input#scribdLink::placeholder {
+  color: #ffffff; /* White placeholder text color */
+}
+
+button#openDoc {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Almost black background for button */
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  font-size: 16px; /* Larger font size for button text */
+}
+
+button#openDoc:hover {
+  background-color: #222; /* Even darker on hover for button */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for a "lifting" effect */
+}
+
+@media (max-width: 768px) {
+  input#scribdLink,
+  button#openDoc {
+    width: 90%;
+  }
+}
